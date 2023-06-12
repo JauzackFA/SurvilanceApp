@@ -1,26 +1,36 @@
 {
   "project_info": {
-    "project_number": "699803855910",
-    "project_id": "survilance-cb4d6",
-    "storage_bucket": "survilance-cb4d6.appspot.com"
+    "project_number": "622359657724",
+    "project_id": "login-survilance",
+    "storage_bucket": "login-survilance.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:699803855910:android:404a3694d45242ef788ae7",
+        "mobilesdk_app_id": "1:622359657724:android:30b2bd83cb6cb45331ab79",
         "android_client_info": {
           "package_name": "com.example.smol_p2_xixi"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "622359657724-p99ofoe2pmgau27b6vepvac05oruppn4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyAKqiNawBzQfyyMvxUqZ-UUCT59jxeQOg8"
+          "current_key": "AIzaSyDqjWQKnAJXRFqkZeCDkezIVovc-5sKBpk"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622359657724-p99ofoe2pmgau27b6vepvac05oruppn4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

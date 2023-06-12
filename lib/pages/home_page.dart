@@ -15,12 +15,17 @@ class HomePage extends StatefulWidget {
 
   @override
   State<HomePage> createState() => _HomePageState();
+
+  void signUserOut() {
+    FirebaseAuth.instance.signOut();
+  }
 }
 
 class _HomePageState extends State<HomePage> {
   int currentIndex = 0;
 
   List<Widget> buildPages = [
+    const HomePage(),
     const Message(),
     const Person(),
   ];
