@@ -1,45 +1,33 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:smol_p2_xixi/components/square_tile.dart';
-import 'package:smol_p2_xixi/components/textfield.dart';
-// import 'package:smol_p2_xixi/components/the_button.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class RegisterPage extends StatefulWidget {
+  const RegisterPage({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<RegisterPage> createState() => _RegisterPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
-  // @override
-  // LoginPage({super.key});
-
-  // Text editing controllers
-  final usernameController = TextEditingController();
-  final passwordController = TextEditingController();
-
-  void signIn() async {
-    await FirebaseAuth.instance.signInWithEmailAndPassword(
-      email: usernameController.text.trim(),
-      password: passwordController.text.trim(),
-    );
-  }
-
-  @override
-  void dispose() {
-    usernameController.dispose();
-    passwordController.dispose();
-    super.dispose();
-  }
-
-  // void signUserIn() {}
-  // void navigateToHomePage(BuildContext context) {
-  //   Navigator.pushReplacementNamed(context, '/home_page');
-  // }
-
+class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
+    final usernameController = TextEditingController();
+    final passwordController = TextEditingController();
+
+    void signIn() async {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: usernameController.text.trim(),
+        password: passwordController.text.trim(),
+      );
+    }
+
+    @override
+    void dispose() {
+      usernameController.dispose();
+      passwordController.dispose();
+      super.dispose();
+    }
+
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
@@ -228,17 +216,6 @@ class _LoginPageState extends State<LoginPage> {
                         endIndent: 30,
                       ),
                     )
-                  ],
-                ),
-                const SizedBox(height: 20),
-
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    SquareTile(imagePath: 'lib/images/facebook-circle.png'),
-                    SquareTile(imagePath: 'lib/images/instagram-circle.png'),
-                    SquareTile(imagePath: 'lib/images/linkedin-circle.png'),
-                    SquareTile(imagePath: 'lib/images/google-circle.png'),
                   ],
                 ),
 
