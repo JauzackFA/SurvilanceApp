@@ -23,11 +23,21 @@ class _PersonState extends State<Person> {
       body: ListView(
         children: [
           const SizedBox(height: 30),
-          Icon(
-            Icons.person,
-            size: 72,
-            color: Colors.white,
+          // Icon(
+          //   Icons.person,
+          //   size: 72,
+          //   color: Colors.white,
+          // ),
+
+          const CircleAvatar(
+            radius: 40,
+            backgroundImage: AssetImage(
+              'lib/images/yujin.png',
+            ),
           ),
+
+          const SizedBox(height: 15),
+
           Text(
             currentUser.email!,
             textAlign: TextAlign.center,
