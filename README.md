@@ -1,8 +1,4 @@
-# survilance-app
-
 # SurvilanceApp
-
-# smol_p2_xixi
 
 A new Flutter project.
 
