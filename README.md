@@ -1,6 +1,6 @@
 # SurvilanceApp
 
-A new Flutter project.
+Survilance is an application designed for Indonesian freelancers who find it difficult to compete in the international arena and this application is specifically designed for Indonesian servers. This application feature provides onsite services that are rarely found in other freelance applications, which allows freelancers to meet directly with customers and execute ideas on the spot.
 
 ## Getting Started
 
